@@ -5,7 +5,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector("#excuse").innerHTML = generateExcuse();
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
+  });
   console.log("Hello Rigo from the console!");
 };
 
